@@ -1,0 +1,37 @@
+.uc_image-content-box
+*{margin:0;padding:0;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box}.uc_image-content-box{display:block;width:100%;text-align:center;overflow:hidden}.uc_image-content-box .uc_portfolio_gallery ul
+li{overflow:hidden;position:relative;width:100%}.uc_image-content-box
+.uc_portfolio_content{overflow:hidden;position:relative}.uc_image-content-box .uc_portfolio_content
+img{display:inline-block;height:auto;vertical-align:top;width:100%}.uc_image-content-box .uc_portfolio_overlay, .uc_image-content-box .uc_portfolio_overlay a,
+.uc_image-content-box .uc_portfolio_overlay a .uc_porfolio_detail, .uc_image-content-box .uc_portfolio_overlay a h2,
+.uc_image-content-box .uc_portfolio_overlay a p,.uc_image-content-box .uc_portfolio_overlay a
+.uc_portfolio_link{opacity:0;transform:scale(0.5)}.uc_image-content-box
+.uc_portfolio_overlay{background-color:rgba(217, 35, 45, 0.85);bottom:0;color:#fff;height:100%;left:0;padding:30px;position:absolute;transition:all 0.3s ease-out 0s;width:100%;text-align:left}.uc_image-content-box .uc_portfolio_overlay
+a{text-decoration:none}.uc_image-content-box .uc_portfolio_overlay a
+.uc_porfolio_detail{font-size:60px;color:#fff;transition:all 0.3s ease-out 0.25s}.uc_image-content-box .uc_portfolio_overlay a
+h2{position:relative;transition:all 0.3s ease-out 0.15s;font-size:24px;color:#fff;margin:2px
+0 6px;font-weight:500}.uc_image-content-box .uc_portfolio_overlay a
+p{position:relative;transition:all 0.3s ease-out 0.25s;font-size:17px;color:#fff;line-height:25px;margin-bottom:5px}.uc_image-content-box .uc_portfolio_overlay a
+.uc_portfolio_link{bottom:22px;font-size:24px;transition:all 0.3s ease-out 0.35s;color:#fff;display:block}.uc_image-content-box .uc_portfolio_content:hover .uc_portfolio_overlay,
+.uc_image-content-box .uc_portfolio_content:hover .uc_portfolio_overlay a,
+.uc_image-content-box .uc_portfolio_content:hover .uc_portfolio_overlay a .uc_porfolio_detail,
+.uc_image-content-box .uc_portfolio_content:hover .uc_portfolio_overlay a h2,
+.uc_image-content-box .uc_portfolio_content:hover .uc_portfolio_overlay a p,
+.uc_image-content-box .uc_portfolio_content:hover .uc_portfolio_overlay a
+.uc_portfolio_link{opacity:1;transform:scale(1)}.uc_quote_slider .slick-dots{display:table;margin:20px
+auto 0}.uc_quote_slider .slick-dots  > ul,.uc_quote_slider
+li{margin:0;padding:0;list-style:none}.uc_quote_slider .slick-dots
+li{float:left;padding-top:10px;margin:0
+3px}.uc_quote_slider.slick-initialized .slick-slide{display:block}.uc_quote_slider .slick-slide{float:left;min-height:1px}.uc_quote_slider
+.uc_quote_item{padding:0
+15px}.uc_quote_slider
+.uc_quote_info{padding:35px
+30px;border:1px
+solid #e5e5e5}.uc_quote_slider .uc_quote_info>p{font-size:14px;color:#888;line-height:25px;font-weight:400;letter-spacing:0.3px;padding-bottom:10px}.uc_quote_slider .uc_quote_info
+.uc_author{display:block;overflow:hidden}.uc_quote_slider .uc_quote_info
+.uc_author_avatar{width:54px;height:54px;border-radius:99px;float:left}.uc_quote_slider .uc_quote_info
+.uc_author_info{font-size:14px;font-weight:bold;float:left;margin-left:16px;font-style:normal;margin-top:6px}.uc_quote_slider .uc_quote_info .uc_author_info
+.uc_name{color:#444;font-size:13px;letter-spacing:1px}.uc_quote_slider .uc_quote_info .uc_author_info
+.uc_company{font-weight:500;font-size:14px}@media (max-width:960px){.uc_quote_slider .uc_quote_info
+.uc_author_info{width:130px}.uc_quote_slider .uc_quote_info
+.uc_author_info{margin-left:12px}}
