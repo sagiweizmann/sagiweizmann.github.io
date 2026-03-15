@@ -1,1464 +1,336 @@
 <!DOCTYPE html>
-<html lang="en-US">
-
+<html lang="en">
 <head>
-<style>
-    img.lazy {
-        min-height: 1px
-    }
-</style>
-<link rel="preload" href="https://sagiweizmann.com/wp-content/plugins/w3-total-cache/pub/js/lazyload.min.js"
-    as="script">
-<meta charset="UTF-8">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.5.0/css/all.min.css"
-    integrity="sha512-QfDd74mlg8afgSqm3Vq2Q65e9b3xMhJB4GZ9OcHDVy1hZ6pqBJPWWnMsKDXM7NINoKqJANNGBuVRIpIJ5dogfA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="profile" href="https://gmpg.org/xfn/11">
-<title>Sagi Weizmann</title>
-<link rel="dns-prefetch" href="//s.w.org">
-<link rel="alternate" type="application/rss+xml" title="Sagi Weizmann &raquo; Feed"
-    href="https://sagiweizmann.com/feed/">
-<link rel="alternate" type="application/rss+xml" title="Sagi Weizmann &raquo; Comments Feed"
-    href="https://sagiweizmann.com/comments/feed/">
-<script>window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/13.0.1\/svg\/", "svgExt": ".svg", "source": { "concatemoji": "https:\/\/sagiweizmann.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.6.14" } }; !function (e, a, t) { var n, r, o, i = a.createElement("canvas"), p = i.getContext && i.getContext("2d"); function s(e, t) { var a = String.fromCharCode; p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, e), 0, 0); e = i.toDataURL(); return p.clearRect(0, 0, i.width, i.height), p.fillText(a.apply(this, t), 0, 0), e === i.toDataURL() } function c(e) { var t = a.createElement("script"); t.src = e, t.defer = t.type = "text/javascript", a.getElementsByTagName("head")[0].appendChild(t) } for (o = Array("flag", "emoji"), t.supports = { everything: !0, everythingExceptFlag: !0 }, r = 0; r < o.length; r++)t.supports[o[r]] = function (e) { if (!p || !p.fillText) return !1; switch (p.textBaseline = "top", p.font = "600 32px Arial", e) { case "flag": return s([127987, 65039, 8205, 9895, 65039], [127987, 65039, 8203, 9895, 65039]) ? !1 : !s([55356, 56826, 55356, 56819], [55356, 56826, 8203, 55356, 56819]) && !s([55356, 57332, 56128, 56423, 56128, 56418, 56128, 56421, 56128, 56430, 56128, 56423, 56128, 56447], [55356, 57332, 8203, 56128, 56423, 8203, 56128, 56418, 8203, 56128, 56421, 8203, 56128, 56430, 8203, 56128, 56423, 8203, 56128, 56447]); case "emoji": return !s([55357, 56424, 8205, 55356, 57212], [55357, 56424, 8203, 55356, 57212]) }return !1 }(o[r]), t.supports.everything = t.supports.everything && t.supports[o[r]], "flag" !== o[r] && (t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && t.supports[o[r]]); t.supports.everythingExceptFlag = t.supports.everythingExceptFlag && !t.supports.flag, t.DOMReady = !1, t.readyCallback = function () { t.DOMReady = !0 }, t.supports.everything || (n = function () { t.readyCallback() }, a.addEventListener ? (a.addEventListener("DOMContentLoaded", n, !1), e.addEventListener("load", n, !1)) : (e.attachEvent("onload", n), a.attachEvent("onreadystatechange", function () { "complete" === a.readyState && t.readyCallback() })), (n = t.source || {}).concatemoji ? c(n.concatemoji) : n.wpemoji && n.twemoji && (c(n.twemoji), c(n.wpemoji))) }(window, document, window._wpemojiSettings);</script>
-<style>
-    img.wp-smiley,
-    img.emoji {
-        display: inline !important;
-        border: none !important;
-        box-shadow: none !important;
-        height: 1em !important;
-        width: 1em !important;
-        margin: 0 .07em !important;
-        vertical-align: -0.1em !important;
-        background: none !important;
-        padding: 0 !important
-    }
-</style>
-<link rel="stylesheet" href="css/minify-3942a.css" media="all">
-<link rel="stylesheet" id="google-fonts-1-css"
-    href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&amp;ver=5.6.14"
-    media="all">
-<link rel="stylesheet" href="css/minify-326d7.css" media="all">
-<link rel="https://api.w.org/" href="https://sagiweizmann.com/wp-json/">
-<link rel="alternate" type="application/json" href="https://sagiweizmann.com/wp-json/wp/v2/pages/239">
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://sagiweizmann.com/xmlrpc.php?rsd">
-<link rel="wlwmanifest" type="application/wlwmanifest+xml"
-    href="https://sagiweizmann.com/wp-includes/wlwmanifest.xml">
-<meta name="generator" content="WordPress 5.6.14">
-<link rel="canonical" href="https://sagiweizmann.com/">
-<link rel="shortlink" href="https://sagiweizmann.com/">
-<link rel="alternate" type="application/json+oembed"
-    href="https://sagiweizmann.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsagiweizmann.com%2F">
-<link rel="alternate" type="text/xml+oembed"
-    href="https://sagiweizmann.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fsagiweizmann.com%2F&amp;format=xml">
-<meta name="framework" content="Redux 4.1.23">
-<link rel="icon" href="favicons/12-cropped-android-chrome-512x512-1-32x32.png" sizes="32x32">
-<link rel="icon" href="favicons/12-cropped-android-chrome-512x512-1-192x192.png" sizes="192x192">
-<link rel="apple-touch-icon" href="favicons/12-cropped-android-chrome-512x512-1-180x180.png">
-<meta name="msapplication-TileImage"
-    content="https://sagiweizmann.com/wp-content/uploads/2020/12/cropped-android-chrome-512x512-1-270x270.png">
-<style id="wp-custom-css">
-    .menu-modal,
-    .header-navigation-wrapper,
-    .nav-menu {
-        display: none !important
-    }
-
-    .site-title {
-        display: none !important
-    }
-
-    .primary-menu {
-        display: none !important
-    }
-
-    #site-header .header-navigation-wrapper,
-    #site-header .mobile-nav-toggle {
-        display: none
-    }
-
-    @media (max-width: 768px) {
-        .main-navigation {
-            display: none
-        }
-    }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sagi Weizmann | Full Stack Developer</title>
+  <meta name="description" content="Sagi Weizmann - Full Stack Developer specializing in Node.js, Vue.js, PHP, and scalable backend systems.">
+  <meta property="og:title" content="Sagi Weizmann | Full Stack Developer">
+  <meta property="og:description" content="Full Stack Developer specializing in Node.js, Vue.js, PHP, and scalable backend systems.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+<body>
 
-<body data-rsssl="1"
-class="home page-template-default page page-id-239 no-sidebar elementor-default elementor-kit-180 elementor-page elementor-page-239">
-<div id="page" class="site"> <a class="skip-link screen-reader-text" href="#primary">Skip to content</a>
-    <header id="masthead" class="site-header">
-        <div class="site-branding">
-            <p class="site-title"><a href="sagiweizmann.html" rel="home">Sagi Weizmann</a></p>
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- Header -->
+<header class="header">
+  <div class="container">
+    <a href="#hero" class="logo">Sagi Weizmann<span>.</span></a>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#articles">Articles</a></li>
+        <li><a href="#testimonials">Clients</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="hamburger" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- Hero -->
+<section id="hero" class="hero">
+  <div class="hero-content">
+    <h1>Sagi Weizmann</h1>
+    <p class="subtitle">Full Stack Developer</p>
+    <p class="typewriter-line"><span id="typewriter"></span><span class="typewriter-cursor">|</span></p>
+    <div class="hero-buttons">
+      <a href="#projects" class="btn btn-primary">View My Work</a>
+      <a href="#contact" class="btn btn-outline" style="border-color:#fff;color:#fff;">Get in Touch</a>
+    </div>
+    <div class="hero-socials">
+      <a href="https://github.com/sagiweizmann" target="_blank" rel="noopener" aria-label="GitHub">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .3a12 12 0 00-3.8 23.38c.6.12.82-.26.82-.58v-2.16c-3.34.73-4.04-1.61-4.04-1.61a3.18 3.18 0 00-1.33-1.76c-1.09-.74.08-.73.08-.73a2.52 2.52 0 011.84 1.24 2.56 2.56 0 003.5 1 2.56 2.56 0 01.76-1.61c-2.67-.3-5.47-1.34-5.47-5.95a4.66 4.66 0 011.24-3.23 4.33 4.33 0 01.12-3.18s1-.33 3.3 1.23a11.38 11.38 0 016 0c2.28-1.56 3.29-1.23 3.29-1.23a4.33 4.33 0 01.12 3.18 4.66 4.66 0 011.24 3.23c0 4.63-2.81 5.65-5.49 5.95a2.86 2.86 0 01.82 2.22v3.29c0 .32.21.7.82.58A12 12 0 0012 .3z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/sagiweizmann/" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05a3.74 3.74 0 013.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 11-.01-4.13 2.06 2.06 0 01.01 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77A1.75 1.75 0 000 1.73v20.54A1.75 1.75 0 001.77 24h20.45A1.76 1.76 0 0024 22.27V1.73A1.76 1.76 0 0022.22 0z"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<main id="main">
+
+<!-- About -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="about-grid reveal">
+      <div class="about-photo">
+        <img src="images/IMG_8254-768x1025.jpg" alt="Sagi Weizmann" loading="lazy">
+      </div>
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>I'm a <span class="highlight">Full Stack Developer</span> with a B.Sc. in Software Engineering. I've been coding since the age of 8, driven by a passion for building things that make an impact.</p>
+        <p>Currently at <span class="highlight">iPostal1</span>, I lead development on high-scale mail management systems using Node.js, Vue.js, Symfony, MySQL, and Docker. I thrive on solving complex problems and delivering production-ready solutions.</p>
+        <p>Beyond web development, I have a strong background in cybersecurity, system architecture, and open-source contribution. When I'm not coding, you'll find me exploring photography and photo editing.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="section" style="background:var(--card-bg);">
+  <div class="container">
+    <h2 class="section-title">What I Do</h2>
+    <p class="section-subtitle">Designing, building, and shipping software end to end</p>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42"/></svg>
         </div>
-        <nav id="site-navigation" class="main-navigation"> <button class="menu-toggle" aria-controls="primary-menu"
-                aria-expanded="false">Primary Menu</button>
-            <div id="primary-menu" class="menu">
-                <ul>
-                    <li class="page_item page-item-239 current_page_item"><a href="sagiweizmann.html"
-                            aria-current="page">#239 (no title)</a></li>
-                    <li class="page_item page-item-371"><a href="cart.html">Cart</a></li>
-                    <li class="page_item page-item-372"><a href="checkout.html">Checkout</a></li>
-                    <li class="page_item page-item-373"><a href="my-account.html">My account</a></li>
-                    <li class="page_item page-item-370"><a href="shop.html">Shop</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <main id="primary" class="site-main">
-        <article id="post-239" class="post-239 page type-page status-publish hentry">
-            <header class="entry-header"></header>
-            <div class="entry-content">
-                <div data-elementor-type="page" data-elementor-id="239" class="elementor elementor-239"
-                    data-elementor-settings="[]">
-                    <div class="elementor-inner">
-                        <div class="elementor-section-wrap">
-                            <section
-                                class="elementor-section elementor-top-section elementor-element elementor-element-698b6571 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                                data-id="698b6571" data-element_type="section"
-                                data-settings='{"stretch_section":"section-stretched","background_background":"classic"}'>
-                                <div class="elementor-background-overlay"></div>
-                                <div class="elementor-container elementor-column-gap-default">
-                                    <div class="elementor-row">
-                                        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-175585fc"
-                                            data-id="175585fc" data-element_type="column">
-                                            <div class="elementor-column-wrap elementor-element-populated">
-                                                <div class="elementor-widget-wrap">
-                                                    <div class="elementor-element elementor-element-680592e9 elementor-invisible elementor-widget elementor-widget-ucaddon_typewriter_text_effect"
-                                                        data-id="680592e9" data-element_type="widget"
-                                                        data-settings='{"_animation":"fadeInUp"}'
-                                                        data-widget_type="ucaddon_typewriter_text_effect.default">
-                                                        <div class="elementor-widget-container">
-                                                            <style>
-                                                                #uc_typewriter_text_effect_elementor12363 {
-                                                                    text-align: center
-                                                                }
-                                                            </style>
-                                                            <div id="uc_typewriter_text_effect_elementor12363">
-                                                                <span class="begining_text" style="color:#F30202;">I
-                                                                </span> <span class="uc-typewriter-element"
-                                                                    style="color:#F30202;">Design </span> <span
-                                                                    class="ending_text" style="color:#FF0202;"><span
-                                                                        style="padding:10px">Websites</span> </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="elementor-element elementor-element-5955f85 animated-slow elementor-invisible elementor-widget elementor-widget-ucaddon_typewriter_text_effect"
-                                                        data-id="5955f85" data-element_type="widget"
-                                                        data-settings='{"_animation":"fadeInUp"}'
-                                                        data-widget_type="ucaddon_typewriter_text_effect.default">
-                                                        <div class="elementor-widget-container">
-                                                            <style>
-                                                                #uc_typewriter_text_effect_elementor26145 {
-                                                                    text-align: center
-                                                                }
-                                                            </style>
-                                                            <div id="uc_typewriter_text_effect_elementor26145">
-                                                                <span class="begining_text"
-                                                                    style="color:#FFFFFF;">Sagi Weizmann </span>
-                                                                <span class="uc-typewriter-element"
-                                                                    style="color:#FFFFFF;"> </span> <span
-                                                                    class="ending_text" style="color:#FFFFFF;">.
-                                                                </span></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                            <section
-                                class="elementor-section elementor-top-section elementor-element elementor-element-7e3a5db6 elementor-section-stretched elementor-section-content-middle elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                                data-id="7e3a5db6" data-element_type="section"
-                                data-settings='{"stretch_section":"section-stretched"}'>
-                                <div class="elementor-container elementor-column-gap-default">
-                                    <div class="elementor-row">
-                                        <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-6ab72121 elementor-invisible"
-                                            data-id="6ab72121" data-element_type="column"
-                                            data-settings='{"animation":"fadeInLeft"}'>
-                                            <div class="elementor-column-wrap elementor-element-populated">
-                                                <div class="elementor-widget-wrap">
-                                                    <div class="elementor-element elementor-element-41df00fb elementor-invisible elementor-widget elementor-widget-image"
-                                                        data-id="41df00fb" data-element_type="widget"
-                                                        data-settings='{"_animation":"bounceInDown"}'
-                                                        data-widget_type="image.default">
-                                                        <div class="elementor-widget-container">
-                                                            <div class="elementor-image"> <img width="640"
-                                                                    height="853"
-                                                                    src="images/IMG_8254-768x1025.jpg"
-                                                                    class="attachment-large size-large" alt
-                                                                    loading="lazy">
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-4966f4dc elementor-invisible"
-                                            data-id="4966f4dc" data-element_type="column"
-                                            data-settings='{"animation":"fadeInRight"}'>
-                                            <div class="elementor-column-wrap elementor-element-populated">
-                                                <div class="elementor-widget-wrap">
-                                                    <div class="elementor-element elementor-element-2469ab27 elementor-widget elementor-widget-heading"
-                                                        data-id="2469ab27" data-element_type="widget"
-                                                        data-widget_type="heading.default">
-                                                        <div class="elementor-widget-container">
-                                                            <h2
-                                                                class="elementor-heading-title elementor-size-default">
-                                                                About Me</h2>
-                                                        </div>
-                                                    </div>
-                                                    <div class="elementor-element elementor-element-7fe41bc3 elementor-widget elementor-widget-divider"
-                                                        data-id="7fe41bc3" data-element_type="widget"
-                                                        data-widget_type="divider.default">
-                                                        <div class="elementor-widget-container">
-                                                            <div class="elementor-divider"> <span
-                                                                    class="elementor-divider-separator"> </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="elementor-element elementor-element-1db5fbe8 elementor-widget elementor-widget-text-editor"
-                                                        data-id="1db5fbe8" data-element_type="widget"
-                                                        data-widget_type="text-editor.default">
-                                                        <div class="elementor-widget-container">
-                                                            <div class="elementor-text-editor elementor-clearfix">
-                                                                <p>Hey there!</p>
-                                                                <p>I am Sagi Weizmann.</p>
-                                                                <p>BS.c in Software Engineering.<br>Highly motivated
-                                                                    self-learner with excellent human relations, a
-                                                                    strong team player.</p>
-                                                                <p><span style="text-decoration: underline;">Developing
-                                                                        since the age of 8. I love learning and
-                                                                        experimenting in the fields
-                                                                        of:</span><br>&ndash; Computer science
-                                                                    (Cybersecurity, Programming, Algorithms,
-                                                                    Networking, and more&hellip;)<br>-Developing
-                                                                    complex systems in Java\C++ and maintain
-                                                                    them.<br>-Freelance and a front-end web
-                                                                    developer.<br>&ndash; UI/UX capabilities like
-                                                                    HTML5, CSS3, JavaScript, React.js and
-                                                                    more.<br>&ndash; <a
-                                                                        href="https://www.facebook.com/ClickTimePhotograph/">Photography</a>
-                                                                    and editing photos using programs like Adobe
-                                                                    Lightroom and Photoshop.</p>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="elementor-element elementor-element-72020c5c elementor-shape-circle elementor-grid-0 elementor-widget elementor-widget-social-icons"
-                                                        data-id="72020c5c" data-element_type="widget"
-                                                        data-widget_type="social-icons.default">
-                                                        <div class="elementor-widget-container">
-                                                            <div
-                                                                class="elementor-social-icons-wrapper elementor-grid">
-                                                                <div class="elementor-grid-item"> <a
-                                                                        class="elementor-icon elementor-social-icon elementor-social-icon-facebook-f elementor-animation-shrink elementor-repeater-item-da7fd40"
-                                                                        href="https://www.facebook.com/sagiweizmann"
-                                                                        target="_blank"> <span
-                                                                            class="elementor-screen-only">Facebook-f</span>
-                                                                        <i class="fab fa-facebook-f"></i> </a></div>
-                                                                <div class="elementor-grid-item"> <a
-                                                                        class="elementor-icon elementor-social-icon elementor-social-icon-linkedin elementor-animation-shrink elementor-repeater-item-a670d53"
-                                                                        href="https://www.linkedin.com/in/sagiweizmann/"
-                                                                        target="_blank"> <span
-                                                                            class="elementor-screen-only">Linkedin</span>
-                                                                        <i class="fab fa-linkedin"></i> </a></div>
-                                                                <div class="elementor-grid-item"> <a
-                                                                        class="elementor-icon elementor-social-icon elementor-social-icon-github elementor-animation-shrink elementor-repeater-item-0511acf"
-                                                                        href="https://github.com/sagiweizmann"
-                                                                        target="_blank"> <span
-                                                                            class="elementor-screen-only">Github</span>
-                                                                        <i class="fab fa-github"></i> </a></div>
-                                                                <div class="elementor-grid-item"> <a
-                                                                        class="elementor-icon elementor-social-icon elementor-social-icon-phone elementor-animation-shrink elementor-repeater-item-fe16ddd"
-                                                                        href="tel:052-2621384" target="_blank">
-                                                                        <span
-                                                                            class="elementor-screen-only">Phone</span>
-                                                                        <i class="fas fa-phone"></i> </a></div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                            <section
-                                class="elementor-section elementor-top-section elementor-element elementor-element-78f551b3 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                                data-id="78f551b3" data-element_type="section"
-                                data-settings='{"stretch_section":"section-stretched","background_background":"classic"}'>
-                                <div class="elementor-container elementor-column-gap-default">
-                                    <div class="elementor-row">
-                                        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-596c0a77"
-                                            data-id="596c0a77" data-element_type="column">
-                                            <div class="elementor-column-wrap elementor-element-populated">
-                                                <div class="elementor-widget-wrap">
-                                                    <div class="elementor-element elementor-element-3dbe8fc7 elementor-invisible elementor-widget elementor-widget-heading"
-                                                        data-id="3dbe8fc7" data-element_type="widget"
-                                                        data-settings='{"_animation":"fadeInUp"}'
-                                                        data-widget_type="heading.default">
-                                                        <div class="elementor-widget-container">
-                                                            <h2
-                                                                class="elementor-heading-title elementor-size-default">
-                                                                What I do</h2>
-                                                        </div>
-                                                    </div>
-                                                    <div class="elementor-element elementor-element-74d20050 elementor-invisible elementor-widget elementor-widget-divider"
-                                                        data-id="74d20050" data-element_type="widget"
-                                                        data-settings='{"_animation":"fadeInUp","_animation_delay":300}'
-                                                        data-widget_type="divider.default">
-                                                        <div class="elementor-widget-container">
-                                                            <div class="elementor-divider"> <span
-                                                                    class="elementor-divider-separator"> </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="elementor-element elementor-element-77febdae elementor-invisible elementor-widget elementor-widget-text-editor"
-                                                        data-id="77febdae" data-element_type="widget"
-                                                        data-settings='{"_animation":"fadeInUp","_animation_delay":600}'
-                                                        data-widget_type="text-editor.default">
-                                                        <div class="elementor-widget-container">
-                                                            <div class="elementor-text-editor elementor-clearfix">
-                                                                This is what i am good at</div>
-                                                        </div>
-                                                    </div>
-                                                    <section
-                                                        class="elementor-section elementor-inner-section elementor-element elementor-element-66a840fe elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible"
-                                                        data-id="66a840fe" data-element_type="section"
-                                                        data-settings='{"animation":"fadeInUp"}'>
-                                                        <div
-                                                            class="elementor-container elementor-column-gap-default">
-                                                            <div class="elementor-row">
-                                                                <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-5df85d9f"
-                                                                    data-id="5df85d9f" data-element_type="column">
-                                                                    <div
-                                                                        class="elementor-column-wrap elementor-element-populated">
-                                                                        <div class="elementor-widget-wrap">
-                                                                            <div class="elementor-element elementor-element-7698147b elementor-widget elementor-widget-ucaddon_diamond_icon_box"
-                                                                                data-id="7698147b"
-                                                                                data-element_type="widget"
-                                                                                data-widget_type="ucaddon_diamond_icon_box.default">
-                                                                                <div
-                                                                                    class="elementor-widget-container">
-                                                                                    <link rel="stylesheet"
-                                                                                        href="css/minify-c3e4a.css"
-                                                                                        media="all">
-                                                                                    <style>
-                                                                                        #uc_diamond_icon_box_elementor36202 {
-                                                                                            transition: 0.4s
-                                                                                        }
+        <h3>Design</h3>
+        <p>I value simple content structure, clean design patterns, and thoughtful interactions.</p>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5"/></svg>
+        </div>
+        <h3>Develop</h3>
+        <p>I like to code things from scratch, and enjoy bringing ideas to life in production.</p>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/></svg>
+        </div>
+        <h3>Secure</h3>
+        <p>With a background in cybersecurity, I build systems that are resilient and secure by design.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-                                                                                        #uc_diamond_icon_box_elementor36202:hover {
-                                                                                            transform: translateY(-30px)
-                                                                                        }
-                                                                                    </style>
-                                                                                    <div class="blox-boxed-small-diamond-icon-box"
-                                                                                        style="background:#ffffff; text-align:center;"
-                                                                                        id="uc_diamond_icon_box_elementor36202">
-                                                                                        <div class="blox-boxed-small-diamond-icon-box-icon"
-                                                                                            style="background-color: #FF0000;border-radius:5px;">
-                                                                                            <i class="fas fa-paint-brush"
-                                                                                                style="color:#ffffff;"></i>
-                                                                                        </div>
-                                                                                        <div
-                                                                                            class="blox-boxed-small-diamond-icon-box-heading">
-                                                                                            <span
-                                                                                                class="uc_style_diamond_icon_box_elementor_title">Design</span>
-                                                                                        </div>
-                                                                                        <div
-                                                                                            class="blox-boxed-small-diamond-icon-box-content">
-                                                                                            <span
-                                                                                                class="uc_style_diamond_icon_box_elementor_description">I
-                                                                                                value simple content
-                                                                                                structure, clean
-                                                                                                design patterns, and
-                                                                                                thoughtful
-                                                                                                interactions.</span>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-3c8dca4f"
-                                                                    data-id="3c8dca4f" data-element_type="column">
-                                                                    <div
-                                                                        class="elementor-column-wrap elementor-element-populated">
-                                                                        <div class="elementor-widget-wrap">
-                                                                            <div class="elementor-element elementor-element-61410981 elementor-widget elementor-widget-ucaddon_diamond_icon_box"
-                                                                                data-id="61410981"
-                                                                                data-element_type="widget"
-                                                                                data-widget_type="ucaddon_diamond_icon_box.default">
-                                                                                <div
-                                                                                    class="elementor-widget-container">
-                                                                                    <style>
-                                                                                        #uc_diamond_icon_box_elementor43344 {
-                                                                                            transition: 0.4s
-                                                                                        }
+<!-- Experience & Education -->
+<section id="experience" class="section">
+  <div class="container">
+    <h2 class="section-title">Experience & Education</h2>
+    <p class="section-subtitle">My professional journey so far</p>
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <span class="timeline-date">2023 - Present</span>
+        <h3>Full Stack Developer</h3>
+        <div class="company">iPostal1</div>
+        <p>Lead developer on high-scale mail management systems using Node.js, Vue.js, Symfony, MySQL, Docker, and CI/CD. Built complex wizards, refactored legacy services, improved API performance, and collaborated with DevOps and QA teams.</p>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <span class="timeline-date">2022</span>
+        <h3>Full Stack Engineer</h3>
+        <div class="company">ThriveDX</div>
+        <p>Developed a phishing simulation and security awareness training platform. Built interactive learning software that educates users on identifying and avoiding phishing attacks, using PHP and modern cybersecurity practices.</p>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot education"></div>
+        <span class="timeline-date education">2022 - 2024</span>
+        <h3>Master's Degree in Software Engineering</h3>
+        <div class="company">SCE - Shamoon College of Engineering</div>
+        <p>M.Sc. in Software Engineering.</p>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <span class="timeline-date">2021</span>
+        <h3>Full Stack Developer</h3>
+        <div class="company">Hyp</div>
+        <p>Developed the company's payment gateway using Perl and PHP. Implemented Apple Pay and Google Pay integrations, built a Shopify Payment Gateway integration using GraphQL, and passed PCI Compliance Level 1.</p>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <span class="timeline-date">2020</span>
+        <h3>Open Source Developer</h3>
+        <div class="company">APIShift</div>
+        <p>Developed a modular engine to build and deploy APIs supporting REST, SOAP, and custom architectures. Released as an open-source project.</p>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot"></div>
+        <span class="timeline-date">2017</span>
+        <h3>Freelance Web Developer</h3>
+        <p>Designed and developed WordPress websites for clients.</p>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot education"></div>
+        <span class="timeline-date education">B.Sc. Software Engineering</span>
+        <h3>Software Engineering Degree</h3>
+        <p>Bachelor's degree in Software Engineering.</p>
+      </div>
+      <div class="timeline-item reveal">
+        <div class="timeline-dot education"></div>
+        <span class="timeline-date education">Magshimim Cyber Program</span>
+        <h3>National Cyber Program</h3>
+        <p>Three years in Israel's national cyber program. Studied Kali Linux, cybersecurity, ethical hacking, and reverse engineering.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-                                                                                        #uc_diamond_icon_box_elementor43344:hover {
-                                                                                            transform: translateY(-30px)
-                                                                                        }
-                                                                                    </style>
-                                                                                    <div class="blox-boxed-small-diamond-icon-box"
-                                                                                        style="background:#ffffff; text-align:center;"
-                                                                                        id="uc_diamond_icon_box_elementor43344">
-                                                                                        <div class="blox-boxed-small-diamond-icon-box-icon"
-                                                                                            style="background-color: #FF0000;border-radius:5px;">
-                                                                                            <i class="fas fa-code"
-                                                                                                style="color:#ffffff;"></i>
-                                                                                        </div>
-                                                                                        <div
-                                                                                            class="blox-boxed-small-diamond-icon-box-heading">
-                                                                                            <span
-                                                                                                class="uc_style_diamond_icon_box_elementor_title">Develop</span>
-                                                                                        </div>
-                                                                                        <div
-                                                                                            class="blox-boxed-small-diamond-icon-box-content">
-                                                                                            <span
-                                                                                                class="uc_style_diamond_icon_box_elementor_description">I
-                                                                                                like to code things
-                                                                                                from scratch, and
-                                                                                                enjoy bringing ideas
-                                                                                                to life .</span>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-7e0fa643"
-                                                                    data-id="7e0fa643" data-element_type="column">
-                                                                    <div
-                                                                        class="elementor-column-wrap elementor-element-populated">
-                                                                        <div class="elementor-widget-wrap">
-                                                                            <div class="elementor-element elementor-element-6032f115 elementor-widget elementor-widget-ucaddon_diamond_icon_box"
-                                                                                data-id="6032f115"
-                                                                                data-element_type="widget"
-                                                                                data-widget_type="ucaddon_diamond_icon_box.default">
-                                                                                <div
-                                                                                    class="elementor-widget-container">
-                                                                                    <style>
-                                                                                        #uc_diamond_icon_box_elementor54235 {
-                                                                                            transition: 0.4s
-                                                                                        }
+<!-- Projects -->
+<section id="projects" class="section" style="background:var(--card-bg);">
+  <div class="container">
+    <h2 class="section-title">My Work</h2>
+    <p class="section-subtitle">A selection of projects I've built</p>
+    <div class="projects-grid">
+      <div class="project-card reveal">
+        <img src="images/apishift-logo.png" alt="APIShift - Modular API engine" class="project-thumb" loading="lazy">
+        <div class="project-info">
+          <h3>APIShift</h3>
+          <p>A modular engine to build and deploy APIs fast, supporting REST, SOAP, and custom architectures.</p>
+          <div class="project-tags"><span>PHP</span><span>Open Source</span><span>REST API</span></div>
+          <a href="https://github.com/DevShiftTeam/APIShift" target="_blank" rel="noopener" class="project-link">View Project &rarr;</a>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <img src="images/drivebitton-3.png" alt="DriveBitton - Driving school website" class="project-thumb" loading="lazy">
+        <div class="project-info">
+          <h3>DriveBitton</h3>
+          <p>WordPress project using AJAX and PHP for a custom recommendation plugin.</p>
+          <div class="project-tags"><span>WordPress</span><span>PHP</span><span>AJAX</span></div>
+          <a href="https://www.drivebitton.com/" target="_blank" rel="noopener" class="project-link">View Project &rarr;</a>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <img src="images/קשת-2.png" alt="Keshet - WordPress website" class="project-thumb" loading="lazy">
+        <div class="project-info">
+          <h3>Keshet</h3>
+          <p>WordPress project designed and developed from scratch.</p>
+          <div class="project-tags"><span>WordPress</span><span>Design</span></div>
+          <a href="http://%D7%A7%D7%A9%D7%AA.com" target="_blank" rel="noopener" class="project-link">View Project &rarr;</a>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <img src="images/musicencrypt.png" alt="MusicEncrypt - Audio encryption tool" class="project-thumb" loading="lazy">
+        <div class="project-info">
+          <h3>Music Encrypt</h3>
+          <p>Music encryption with .wav files. GUI built with Tkinter.</p>
+          <div class="project-tags"><span>Python</span><span>Tkinter</span><span>Encryption</span></div>
+          <a href="https://github.com/sagiweizmann/MusicEncrypt" target="_blank" rel="noopener" class="project-link">View Project &rarr;</a>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <img src="images/ninjaslice.png" alt="NinjaSlice - Arcade game" class="project-thumb" loading="lazy">
+        <div class="project-info">
+          <h3>Ninja Slice</h3>
+          <p>A Fruit Ninja-inspired game with a unique twist, built as a personal project.</p>
+          <div class="project-tags"><span>Game Dev</span><span>C#</span></div>
+          <a href="https://github.com/sagiweizmann/NinjaSlice" target="_blank" rel="noopener" class="project-link">View Project &rarr;</a>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <img src="images/stickycar.png" alt="StickyCar - Racing game" class="project-thumb" loading="lazy">
+        <div class="project-info">
+          <h3>StickyCar</h3>
+          <p>An independent racing game system extending the Balance Racing Game by Brackeys.</p>
+          <div class="project-tags"><span>Game Dev</span><span>Unity</span></div>
+          <a href="https://github.com/sagiweizmann/StickyCar" target="_blank" rel="noopener" class="project-link">View Project &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-                                                                                        #uc_diamond_icon_box_elementor54235:hover {
-                                                                                            transform: translateY(-30px)
-                                                                                        }
-                                                                                    </style>
-                                                                                    <div class="blox-boxed-small-diamond-icon-box"
-                                                                                        style="background:#ffffff; text-align:center;"
-                                                                                        id="uc_diamond_icon_box_elementor54235">
-                                                                                        <div class="blox-boxed-small-diamond-icon-box-icon"
-                                                                                            style="background-color: #FF0000;border-radius:5px;">
-                                                                                            <i class="fas fa-trophy"
-                                                                                                style="color:#ffffff;"></i>
-                                                                                        </div>
-                                                                                        <div
-                                                                                            class="blox-boxed-small-diamond-icon-box-heading">
-                                                                                            <span
-                                                                                                class="uc_style_diamond_icon_box_elementor_title">Discover</span>
-                                                                                        </div>
-                                                                                        <div
-                                                                                            class="blox-boxed-small-diamond-icon-box-content">
-                                                                                            <span
-                                                                                                class="uc_style_diamond_icon_box_elementor_description">I
-                                                                                                genuinely care about
-                                                                                                people, and love
-                                                                                                helping fellow
-                                                                                                designers work on
-                                                                                                their craft.</span>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </section>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                            <section
-                                class="elementor-section elementor-top-section elementor-element elementor-element-607f684c elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                                data-id="607f684c" data-element_type="section"
-                                data-settings='{"stretch_section":"section-stretched"}'>
-                                <div class="elementor-container elementor-column-gap-default">
-                                    <div class="elementor-row">
-                                        <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-20614619 elementor-invisible"
-                                            data-id="20614619" data-element_type="column"
-                                            data-settings='{"animation":"fadeInLeft"}'>
-                                            <div class="elementor-column-wrap elementor-element-populated">
-                                                <div class="elementor-widget-wrap">
-                                                    <div class="elementor-element elementor-element-23be2a36 elementor-widget elementor-widget-heading"
-                                                        data-id="23be2a36" data-element_type="widget"
-                                                        data-widget_type="heading.default">
-                                                        <div class="elementor-widget-container">
-                                                            <h2
-                                                                class="elementor-heading-title elementor-size-default">
-                                                                Education</h2>
-                                                        </div>
-                                                    </div>
-                                                    <div class="elementor-element elementor-element-7c4b7e7e elementor-widget elementor-widget-divider"
-                                                        data-id="7c4b7e7e" data-element_type="widget"
-                                                        data-widget_type="divider.default">
-                                                        <div class="elementor-widget-container">
-                                                            <div class="elementor-divider"> <span
-                                                                    class="elementor-divider-separator"> </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="elementor-element elementor-element-eee6ff2 elementor-widget elementor-widget-ucaddon_blox_icon_timeline"
-                                                        data-id="eee6ff2" data-element_type="widget"
-                                                        data-widget_type="ucaddon_blox_icon_timeline.default">
-                                                        <div class="elementor-widget-container">
-                                                            <link rel="stylesheet" href="css/minify-9cae0.css"
-                                                                media="all">
-                                                            <style>
-                                                                #uc_blox_icon_timeline_elementor60742 li:before {
-                                                                    border-left: 3px solid #1B202D
-                                                                }
-                                                            </style>
-                                                            <ul class="blox-icon-timeline"
-                                                                id="uc_blox_icon_timeline_elementor60742">
-                                                                <li>
-                                                                    <div class="blox-wrapper"
-                                                                        style="background-color:#0830A5;">
-                                                                        <div class="blox-icon"
-                                                                            style=" background-color:#FF0000;"><i
-                                                                                class="fa fa-tv"></i></div>
-                                                                        <div class="blox-heading"><span
-                                                                                class="uc_style_blox_icon_timeline_elementor_uc_items_attribute_title"
-                                                                                style="color:#FFFFFF;"> Bachelor's
-                                                                                degree</span></div>
-                                                                        <div class="blox-content"><span
-                                                                                class="uc_style_blox_icon_timeline_elementor_uc_items_attribute_description"
-                                                                                style="color:#777777;">Software
-                                                                                Engineering Bachelor's Degree</span>
-                                                                        </div>
-                                                                        <div class="blox-date"
-                                                                            style="color:#999999;"><span
-                                                                                class="uc_style_blox_icon_timeline_elementor_uc_items_attribute_date"
-                                                                                style="color:#999999;">December 31,
-                                                                                2020</span></div>
-                                                                    </div>
-                                                                </li>
-                                                                <li>
-                                                                    <div class="blox-wrapper"
-                                                                        style="background-color:#0830A5;">
-                                                                        <div class="blox-icon"
-                                                                            style=" background-color:#FF0000;"><i
-                                                                                class="fa fa-book"></i></div>
-                                                                        <div class="blox-heading"><span
-                                                                                class="uc_style_blox_icon_timeline_elementor_uc_items_attribute_title"
-                                                                                style="color:#FFFFFF;">High School
-                                                                                Education</span></div>
-                                                                        <div class="blox-content"><span
-                                                                                class="uc_style_blox_icon_timeline_elementor_uc_items_attribute_description"
-                                                                                style="color:#777777;">10 software
-                                                                                engineering units were extended,
-                                                                                with a video game as a graduation
-                                                                                project.</span></div>
-                                                                        <div class="blox-date"
-                                                                            style="color:#999999;"><span
-                                                                                class="uc_style_blox_icon_timeline_elementor_uc_items_attribute_date"
-                                                                                style="color:#999999;">June 30,
-                                                                                2015</span></div>
-                                                                    </div>
-                                                                </li>
-                                                                <li>
-                                                                    <div class="blox-wrapper"
-                                                                        style="background-color:#0830A5;">
-                                                                        <div class="blox-icon"
-                                                                            style=" background-color:#FF0000;"><i
-                                                                                class="fa fa-code"></i></div>
-                                                                        <div class="blox-heading"><span
-                                                                                class="uc_style_blox_icon_timeline_elementor_uc_items_attribute_title"
-                                                                                style="color:#FFFFFF;">Magshimim
-                                                                                Cyber Course</span></div>
-                                                                        <div class="blox-content"><span
-                                                                                class="uc_style_blox_icon_timeline_elementor_uc_items_attribute_description"
-                                                                                style="color:#777777;">For the past
-                                                                                three years, I've been based in
-                                                                                Israel's national cyber program.
-                                                                                I've learned Kali Linux,
-                                                                                cybersecurity, ethical hacking,
-                                                                                reverse engineering, and a variety
-                                                                                of other topics...</span></div>
-                                                                        <div class="blox-date"
-                                                                            style="color:#999999;"><span
-                                                                                class="uc_style_blox_icon_timeline_elementor_uc_items_attribute_date"
-                                                                                style="color:#999999;">June 30,
-                                                                                2015</span></div>
-                                                                    </div>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-17643bfb elementor-invisible"
-                                            data-id="17643bfb" data-element_type="column"
-                                            data-settings='{"animation":"fadeInRight"}'>
-                                            <div class="elementor-column-wrap elementor-element-populated">
-                                                <div class="elementor-widget-wrap">
-                                                    <div class="elementor-element elementor-element-eb5ff elementor-widget elementor-widget-heading"
-                                                        data-id="eb5ff" data-element_type="widget"
-                                                        data-widget_type="heading.default">
-                                                        <div class="elementor-widget-container">
-                                                            <h2
-                                                                class="elementor-heading-title elementor-size-default">
-                                                                Experience</h2>
-                                                        </div>
-                                                    </div>
-                                                    <div class="elementor-element elementor-element-76f402db elementor-widget elementor-widget-divider"
-                                                        data-id="76f402db" data-element_type="widget"
-                                                        data-widget_type="divider.default">
-                                                        <div class="elementor-widget-container">
-                                                            <div class="elementor-divider"> <span
-                                                                    class="elementor-divider-separator"> </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="elementor-element elementor-element-5f17b516 elementor-widget elementor-widget-ucaddon_blox_icon_timeline"
-                                                        data-id="5f17b516" data-element_type="widget"
-                                                        data-widget_type="ucaddon_blox_icon_timeline.default">
-                                                        <div class="elementor-widget-container">
-                                                            <style>
-                                                                #uc_blox_icon_timeline_elementor74285 li:before {
-                                                                    border-left: 3px solid #0830A5
-                                                                }
-                                                            </style>
-                                                            <ul class="blox-icon-timeline"
-                                                                id="uc_blox_icon_timeline_elementor74285">
-                                                                <li>
-                                                                    <div class="blox-wrapper" style="background-color:#0830A5;">
-                                                                        <div class="blox-icon" style="background-color:#FF0000;">
-                                                                            <i class="fa fa-code"></i>
-                                                                        </div>
-                                                                        <div class="blox-heading">
-                                                                            <span class="uc_style_blox_icon_timeline_elementor_uc_items_attribute_title" style="color:#FFFFFF;">
-                                                                                Full Stack Developer at iPostal1
-                                                                            </span>
-                                                                        </div>
-                                                                        <div class="blox-content">
-                                                                            <span class="uc_style_blox_icon_timeline_elementor_uc_items_attribute_description" style="color:#777777;">
-                                                                                Lead developer working on high-scale mail management systems using NodeJs, Vue.js, Symfony
-                                                                                MySQL, Docker, CI/CD, and advanced backend architecture.  
-                                                                                Built complex wizards (1583, PD), refactored legacy services, improved API performance,
-                                                                                and collaborated closely with DevOps and QA teams.
-                                                                            </span>
-                                                                        </div>
-                                                                        <div class="blox-date" style="color:#999999;">
-                                                                            <span class="uc_style_blox_icon_timeline_elementor_uc_items_attribute_date" style="color:#999999;">
-                                                                                2023 - Present
-                                                                            </span>
-                                                                        </div>
-                                                                    </div>
-                                                                </li>
-                                                                <li>
-                                                                    <div class="blox-wrapper"
-                                                                        style="background-color:#0830A5;">
-                                                                        <div class="blox-icon"
-                                                                            style=" background-color:#FF0000;"><i
-                                                                                class="fa fa-expeditedssl"></i>
-                                                                        </div>
-                                                                        <div class="blox-heading"><span
-                                                                                class="uc_style_blox_icon_timeline_elementor_uc_items_attribute_title"
-                                                                                style="color:#FFFFFF;">Full Stack
-                                                                                Engineer at ThriveDX</span></div>
-                                                                        <div class="blox-content"><span
-                                                                                class="uc_style_blox_icon_timeline_elementor_uc_items_attribute_description"
-                                                                                style="color:#777777;">Cyber
-                                                                                Security And PHP Developer</span>
-                                                                        </div>
-                                                                        <div class="blox-date"
-                                                                            style="color:#999999;"><span
-                                                                                class="uc_style_blox_icon_timeline_elementor_uc_items_attribute_date"
-                                                                                style="color:#999999;">October ,
-                                                                                2022</span></div>
-                                                                    </div>
-                                                                </li>
-                                                                <li>
-                                                                    <div class="blox-wrapper"
-                                                                        style="background-color:#0830A5;">
-                                                                        <div class="blox-icon"
-                                                                            style=" background-color:#FF0000;"><i
-                                                                                class="fa fa-credit-card"></i></div>
-                                                                        <div class="blox-heading"><span
-                                                                                class="uc_style_blox_icon_timeline_elementor_uc_items_attribute_title"
-                                                                                style="color:#FFFFFF;">Full Stack
-                                                                                Developer at Hyp</span></div>
-                                                                        <div class="blox-content"><span
-                                                                                class="uc_style_blox_icon_timeline_elementor_uc_items_attribute_description"
-                                                                                style="color:#777777;">Develop and
-                                                                                evolve the company's payment
-                                                                                gateway, mostly using Perl and PHP
-                                                                                for the backend. The frontend is
-                                                                                written in HTML, Pure JS, and
-                                                                                jQuery, As a developer, my key
-                                                                                responsibilities included creating
-                                                                                and developing major features like
-                                                                                Apple Pay and Google Pay, as well as
-                                                                                major integrations with large
-                                                                                companies' APIs like MAX, Easy
-                                                                                Count, and Tranzilla.In addition, I
-                                                                                designed and developed a big
-                                                                                integration with an accounting
-                                                                                company that we merged with, also
-                                                                                Developed an integration with
-                                                                                Shopify Payment Gateway using
-                                                                                GraphQL Designed the whole system
-                                                                                and uploaded it to production.
-                                                                                Uploaded and updated quickly, as
-                                                                                well as delivering hot patches on
-                                                                                time. Pass the payment gateway code
-                                                                                a PCI Compliance Test on LEVEL
-                                                                                1.</span></div>
-                                                                        <div class="blox-date"
-                                                                            style="color:#999999;"><span
-                                                                                class="uc_style_blox_icon_timeline_elementor_uc_items_attribute_date"
-                                                                                style="color:#999999;">January,
-                                                                                2021</span></div>
-                                                                    </div>
-                                                                </li>
-                                                                <li>
-                                                                    <div class="blox-wrapper"
-                                                                        style="background-color:#0830A5;">
-                                                                        <div class="blox-icon"
-                                                                            style=" background-color:#FF0000;"><i
-                                                                                class="fa fa-code"></i></div>
-                                                                        <div class="blox-heading"><span
-                                                                                class="uc_style_blox_icon_timeline_elementor_uc_items_attribute_title"
-                                                                                style="color:#FFFFFF;">Open Source
-                                                                                Developer</span></div>
-                                                                        <div class="blox-content"><span
-                                                                                class="uc_style_blox_icon_timeline_elementor_uc_items_attribute_description"
-                                                                                style="color:#777777;">Developed an
-                                                                                engine with a modular design to
-                                                                                build and deploy an API very fast
-                                                                                that can model any type of
-                                                                                architecture (REST, SOAP, etc...)
-                                                                                &ndash; it&rsquo;s been released as
-                                                                                an open-source project
-                                                                                (APIShift).</span></div>
-                                                                        <div class="blox-date"
-                                                                            style="color:#999999;"><span
-                                                                                class="uc_style_blox_icon_timeline_elementor_uc_items_attribute_date"
-                                                                                style="color:#999999;">December 31,
-                                                                                2020</span></div>
-                                                                    </div>
-                                                                </li>
-                                                                <li>
-                                                                    <div class="blox-wrapper"
-                                                                        style="background-color:#0830A5;">
-                                                                        <div class="blox-icon"
-                                                                            style=" background-color:#FF0000;"><i
-                                                                                class="fa fa-code"></i></div>
-                                                                        <div class="blox-heading"><span
-                                                                                class="uc_style_blox_icon_timeline_elementor_uc_items_attribute_title"
-                                                                                style="color:#FFFFFF;">Freelance Web
-                                                                                Developer</span></div>
-                                                                        <div class="blox-content"><span
-                                                                                class="uc_style_blox_icon_timeline_elementor_uc_items_attribute_description"
-                                                                                style="color:#777777;">Designed and
-                                                                                developed a number of WordPress
-                                                                                websites.</span></div>
-                                                                        <div class="blox-date"
-                                                                            style="color:#999999;"><span
-                                                                                class="uc_style_blox_icon_timeline_elementor_uc_items_attribute_date"
-                                                                                style="color:#999999;">December 31,
-                                                                                2017</span></div>
-                                                                    </div>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                            <section
-                                class="elementor-section elementor-top-section elementor-element elementor-element-15a76a76 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                                data-id="15a76a76" data-element_type="section"
-                                data-settings='{"stretch_section":"section-stretched","background_background":"classic"}'>
-                                <div class="elementor-container elementor-column-gap-default">
-                                    <div class="elementor-row">
-                                        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ca288e5"
-                                            data-id="ca288e5" data-element_type="column">
-                                            <div class="elementor-column-wrap elementor-element-populated">
-                                                <div class="elementor-widget-wrap">
-                                                    <div class="elementor-element elementor-element-20f6b611 elementor-invisible elementor-widget elementor-widget-heading"
-                                                        data-id="20f6b611" data-element_type="widget"
-                                                        data-settings='{"_animation":"fadeInUp"}'
-                                                        data-widget_type="heading.default">
-                                                        <div class="elementor-widget-container">
-                                                            <h2
-                                                                class="elementor-heading-title elementor-size-default">
-                                                                My Works</h2>
-                                                        </div>
-                                                    </div>
-                                                    <div class="elementor-element elementor-element-21b5d1d elementor-invisible elementor-widget elementor-widget-divider"
-                                                        data-id="21b5d1d" data-element_type="widget"
-                                                        data-settings='{"_animation":"fadeInUp","_animation_delay":300}'
-                                                        data-widget_type="divider.default">
-                                                        <div class="elementor-widget-container">
-                                                            <div class="elementor-divider"> <span
-                                                                    class="elementor-divider-separator"> </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="elementor-element elementor-element-4e91373 elementor-invisible elementor-widget elementor-widget-text-editor"
-                                                        data-id="4e91373" data-element_type="widget"
-                                                        data-settings='{"_animation":"fadeInUp","_animation_delay":600}'
-                                                        data-widget_type="text-editor.default">
-                                                        <div class="elementor-widget-container">
-                                                            <div class="elementor-text-editor elementor-clearfix">
-                                                                Check out my latest works</div>
-                                                        </div>
-                                                    </div>
-                                                    <section
-                                                        class="elementor-section elementor-inner-section elementor-element elementor-element-545cbb6e elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-invisible"
-                                                        data-id="545cbb6e" data-element_type="section"
-                                                        data-settings='{"animation":"fadeInUp"}'>
-                                                        <div
-                                                            class="elementor-container elementor-column-gap-default">
-                                                            <div class="elementor-row">
-                                                                <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-76eb1fcf"
-                                                                    data-id="76eb1fcf" data-element_type="column">
-                                                                    <div
-                                                                        class="elementor-column-wrap elementor-element-populated">
-                                                                        <div class="elementor-widget-wrap">
-                                                                            <div class="elementor-element elementor-element-20dad1d4 elementor-widget elementor-widget-ucaddon_solid_color_overlay_icon_box"
-                                                                                data-id="20dad1d4"
-                                                                                data-element_type="widget"
-                                                                                data-widget_type="ucaddon_solid_color_overlay_icon_box.default">
-                                                                                <div
-                                                                                    class="elementor-widget-container">
-                                                                                    <link rel="stylesheet"
-                                                                                        href="css/minify-02cc2.css"
-                                                                                        media="all">
-                                                                                    <div
-                                                                                        class="uc_image-content-box">
-                                                                                        <div
-                                                                                            class="uc_portfolio_gallery">
-                                                                                            <ul>
-                                                                                                <li>
-                                                                                                    <div
-                                                                                                        class="uc_portfolio_content">
-                                                                                                        <img src="images/קשת-2.png"
-                                                                                                            alt
-                                                                                                            class="uc_image-content-box-image"
-                                                                                                            style="object-fit:cover;">
-                                                                                                        <div class="uc_portfolio_overlay"
-                                                                                                            style="background-color:#1B202D;">
-                                                                                                            <a
-                                                                                                                href="http://%D7%A7%D7%A9%D7%AA.com">
-                                                                                                                <div
-                                                                                                                    class="uc_porfolio_detail">
-                                                                                                                    <i
-                                                                                                                        class></i>
-                                                                                                                </div>
-                                                                                                                <h2
-                                                                                                                    style="padding-top:10px;padding-bottom:10px;">
-                                                                                                                    Keshet
-                                                                                                                </h2>
-                                                                                                                <p><span class="uc_style_solid_color_overlay_icon_box_elementor_content_one"
-                                                                                                                        style="color:#FFFFFF;">WordPress
-                                                                                                                        Project
-                                                                                                                        designed
-                                                                                                                        by
-                                                                                                                        me.</span>
-                                                                                                                </p>
-                                                                                                                <div
-                                                                                                                    class="uc_portfolio_link">
-                                                                                                                </div>
-                                                                                                            </a>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </li>
-                                                                                            </ul>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="elementor-element elementor-element-1fd15905 elementor-widget elementor-widget-ucaddon_solid_color_overlay_icon_box"
-                                                                                data-id="1fd15905"
-                                                                                data-element_type="widget"
-                                                                                data-widget_type="ucaddon_solid_color_overlay_icon_box.default">
-                                                                                <div
-                                                                                    class="elementor-widget-container">
-                                                                                    <div
-                                                                                        class="uc_image-content-box">
-                                                                                        <div
-                                                                                            class="uc_portfolio_gallery">
-                                                                                            <ul>
-                                                                                                <li>
-                                                                                                    <div
-                                                                                                        class="uc_portfolio_content">
-                                                                                                        <img src="images/ninjaslice.png"
-                                                                                                            alt
-                                                                                                            class="uc_image-content-box-image"
-                                                                                                            style="object-fit:cover;">
-                                                                                                        <div class="uc_portfolio_overlay"
-                                                                                                            style="background-color:#1B202D;">
-                                                                                                            <a
-                                                                                                                href="https://github.com/sagiweizmann/NinjaSlice">
-                                                                                                                <div
-                                                                                                                    class="uc_porfolio_detail">
-                                                                                                                    <i
-                                                                                                                        class></i>
-                                                                                                                </div>
-                                                                                                                <h2
-                                                                                                                    style="padding-top:10px;padding-bottom:10px;">
-                                                                                                                    Ninja
-                                                                                                                    Slice
-                                                                                                                </h2>
-                                                                                                                <p><span class="uc_style_solid_color_overlay_icon_box_elementor_content_one"
-                                                                                                                        style="color:#FFFFFF;">The
-                                                                                                                        game
-                                                                                                                        is
-                                                                                                                        based
-                                                                                                                        on
-                                                                                                                        the
-                                                                                                                        familiar
-                                                                                                                        game
-                                                                                                                        Fruit
-                                                                                                                        Ninja
-                                                                                                                        where
-                                                                                                                        there
-                                                                                                                        are
-                                                                                                                        fruits
-                                                                                                                        that
-                                                                                                                        jump
-                                                                                                                        to
-                                                                                                                        the
-                                                                                                                        screen
-                                                                                                                        and
-                                                                                                                        have
-                                                                                                                        to
-                                                                                                                        be
-                                                                                                                        cut
-                                                                                                                        by
-                                                                                                                        a
-                                                                                                                        knife,
-                                                                                                                        the
-                                                                                                                        game
-                                                                                                                        here
-                                                                                                                        is
-                                                                                                                        based
-                                                                                                                        on
-                                                                                                                        terrorists
-                                                                                                                        who
-                                                                                                                        jump
-                                                                                                                        to
-                                                                                                                        the
-                                                                                                                        screen
-                                                                                                                        and
-                                                                                                                        you
-                                                                                                                        have
-                                                                                                                        cut
-                                                                                                                        them
-                                                                                                                        with
-                                                                                                                        a
-                                                                                                                        "knife".</span>
-                                                                                                                </p>
-                                                                                                                <div
-                                                                                                                    class="uc_portfolio_link">
-                                                                                                                </div>
-                                                                                                            </a>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </li>
-                                                                                            </ul>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-34a9af97"
-                                                                    data-id="34a9af97" data-element_type="column">
-                                                                    <div
-                                                                        class="elementor-column-wrap elementor-element-populated">
-                                                                        <div class="elementor-widget-wrap">
-                                                                            <div class="elementor-element elementor-element-160a746a elementor-widget elementor-widget-ucaddon_solid_color_overlay_icon_box"
-                                                                                data-id="160a746a"
-                                                                                data-element_type="widget"
-                                                                                data-widget_type="ucaddon_solid_color_overlay_icon_box.default">
-                                                                                <div
-                                                                                    class="elementor-widget-container">
-                                                                                    <div
-                                                                                        class="uc_image-content-box">
-                                                                                        <div
-                                                                                            class="uc_portfolio_gallery">
-                                                                                            <ul>
-                                                                                                <li>
-                                                                                                    <div
-                                                                                                        class="uc_portfolio_content">
-                                                                                                        <img src="images/stickycar.png"
-                                                                                                            alt
-                                                                                                            class="uc_image-content-box-image"
-                                                                                                            style="object-fit:cover;">
-                                                                                                        <div class="uc_portfolio_overlay"
-                                                                                                            style="background-color:#1B202D;">
-                                                                                                            <a
-                                                                                                                href="https://github.com/sagiweizmann/StickyCar">
-                                                                                                                <div
-                                                                                                                    class="uc_porfolio_detail">
-                                                                                                                    <i
-                                                                                                                        class></i>
-                                                                                                                </div>
-                                                                                                                <h2
-                                                                                                                    style="padding-top:10px;padding-bottom:10px;">
-                                                                                                                    StickyCar
-                                                                                                                </h2>
-                                                                                                                <p><span class="uc_style_solid_color_overlay_icon_box_elementor_content_one"
-                                                                                                                        style="color:#FFFFFF;">Sticky
-                                                                                                                        Car
-                                                                                                                        is
-                                                                                                                        a
-                                                                                                                        totally
-                                                                                                                        independent
-                                                                                                                        system
-                                                                                                                        that
-                                                                                                                        is
-                                                                                                                        based
-                                                                                                                        on
-                                                                                                                        a
-                                                                                                                        self-made
-                                                                                                                        game
-                                                                                                                        from
-                                                                                                                        GitHub
-                                                                                                                        called:
-                                                                                                                        &ldquo;Balance
-                                                                                                                        Racing
-                                                                                                                        Game&rdquo;
-                                                                                                                        by
-                                                                                                                        Brackeys
-                                                                                                                        and
-                                                                                                                        it&rsquo;s
-                                                                                                                        actually
-                                                                                                                        an
-                                                                                                                        extension
-                                                                                                                        to
-                                                                                                                        that
-                                                                                                                        game.</span>
-                                                                                                                </p>
-                                                                                                                <div
-                                                                                                                    class="uc_portfolio_link">
-                                                                                                                </div>
-                                                                                                            </a>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </li>
-                                                                                            </ul>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="elementor-element elementor-element-1e0bb6bb elementor-widget elementor-widget-ucaddon_solid_color_overlay_icon_box"
-                                                                                data-id="1e0bb6bb"
-                                                                                data-element_type="widget"
-                                                                                data-widget_type="ucaddon_solid_color_overlay_icon_box.default">
-                                                                                <div
-                                                                                    class="elementor-widget-container">
-                                                                                    <div
-                                                                                        class="uc_image-content-box">
-                                                                                        <div
-                                                                                            class="uc_portfolio_gallery">
-                                                                                            <ul>
-                                                                                                <li>
-                                                                                                    <div
-                                                                                                        class="uc_portfolio_content">
-                                                                                                        <img src="images/apishift-logo.png"
-                                                                                                            alt
-                                                                                                            class="uc_image-content-box-image"
-                                                                                                            style="object-fit:cover;">
-                                                                                                        <div class="uc_portfolio_overlay"
-                                                                                                            style="background-color:#1B202D;">
-                                                                                                            <a
-                                                                                                                href="https://github.com/DevShiftTeam/APIShift">
-                                                                                                                <div
-                                                                                                                    class="uc_porfolio_detail">
-                                                                                                                    <i
-                                                                                                                        class></i>
-                                                                                                                </div>
-                                                                                                                <h2
-                                                                                                                    style="padding-top:10px;padding-bottom:10px;">
-                                                                                                                    APIShift
-                                                                                                                </h2>
-                                                                                                                <p><span class="uc_style_solid_color_overlay_icon_box_elementor_content_one"
-                                                                                                                        style="color:#FFFFFF;">You
-                                                                                                                        can
-                                                                                                                        implement
-                                                                                                                        architectures
-                                                                                                                        such
-                                                                                                                        as
-                                                                                                                        REST,
-                                                                                                                        SOAP
-                                                                                                                        or
-                                                                                                                        your
-                                                                                                                        own
-                                                                                                                        application
-                                                                                                                        specific
-                                                                                                                        implementation.
-                                                                                                                        The
-                                                                                                                        main
-                                                                                                                        idea
-                                                                                                                        is
-                                                                                                                        to
-                                                                                                                        allow
-                                                                                                                        developers
-                                                                                                                        to
-                                                                                                                        build
-                                                                                                                        a
-                                                                                                                        back-end
-                                                                                                                        for
-                                                                                                                        any
-                                                                                                                        site
-                                                                                                                        and
-                                                                                                                        application
-                                                                                                                        much
-                                                                                                                        faster
-                                                                                                                        and
-                                                                                                                        easier
-                                                                                                                        using
-                                                                                                                        a
-                                                                                                                        simple,
-                                                                                                                        extendable
-                                                                                                                        and
-                                                                                                                        agile
-                                                                                                                        architecture
-                                                                                                                        and
-                                                                                                                        workflow.
-                                                                                                                    </span>
-                                                                                                                </p>
-                                                                                                                <div
-                                                                                                                    class="uc_portfolio_link">
-                                                                                                                </div>
-                                                                                                            </a>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </li>
-                                                                                            </ul>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="elementor-column elementor-col-33 elementor-inner-column elementor-element elementor-element-37af0cd7"
-                                                                    data-id="37af0cd7" data-element_type="column">
-                                                                    <div
-                                                                        class="elementor-column-wrap elementor-element-populated">
-                                                                        <div class="elementor-widget-wrap">
-                                                                            <div class="elementor-element elementor-element-5f13c700 elementor-widget elementor-widget-ucaddon_solid_color_overlay_icon_box"
-                                                                                data-id="5f13c700"
-                                                                                data-element_type="widget"
-                                                                                data-widget_type="ucaddon_solid_color_overlay_icon_box.default">
-                                                                                <div
-                                                                                    class="elementor-widget-container">
-                                                                                    <div
-                                                                                        class="uc_image-content-box">
-                                                                                        <div
-                                                                                            class="uc_portfolio_gallery">
-                                                                                            <ul>
-                                                                                                <li>
-                                                                                                    <div
-                                                                                                        class="uc_portfolio_content">
-                                                                                                        <img src="images/musicencrypt.png"
-                                                                                                            alt
-                                                                                                            class="uc_image-content-box-image"
-                                                                                                            style="object-fit:cover;">
-                                                                                                        <div class="uc_portfolio_overlay"
-                                                                                                            style="background-color:#1B202D;">
-                                                                                                            <a
-                                                                                                                href="https://github.com/sagiweizmann/MusicEncrypt">
-                                                                                                                <div
-                                                                                                                    class="uc_porfolio_detail">
-                                                                                                                    <i
-                                                                                                                        class></i>
-                                                                                                                </div>
-                                                                                                                <h2
-                                                                                                                    style="padding-top:10px;padding-bottom:10px;">
-                                                                                                                    Music
-                                                                                                                    Encrypt
-                                                                                                                </h2>
-                                                                                                                <p><span class="uc_style_solid_color_overlay_icon_box_elementor_content_one"
-                                                                                                                        style="color:#FFFFFF;">Music
-                                                                                                                        Encryption
-                                                                                                                        with
-                                                                                                                        .wav
-                                                                                                                        files
-                                                                                                                        ,
-                                                                                                                        GUI
-                                                                                                                        Made
-                                                                                                                        in
-                                                                                                                        tkinter.</span>
-                                                                                                                </p>
-                                                                                                                <div
-                                                                                                                    class="uc_portfolio_link">
-                                                                                                                </div>
-                                                                                                            </a>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </li>
-                                                                                            </ul>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="elementor-element elementor-element-6a41c6b0 elementor-widget elementor-widget-ucaddon_solid_color_overlay_icon_box"
-                                                                                data-id="6a41c6b0"
-                                                                                data-element_type="widget"
-                                                                                data-widget_type="ucaddon_solid_color_overlay_icon_box.default">
-                                                                                <div
-                                                                                    class="elementor-widget-container">
-                                                                                    <div
-                                                                                        class="uc_image-content-box">
-                                                                                        <div
-                                                                                            class="uc_portfolio_gallery">
-                                                                                            <ul>
-                                                                                                <li>
-                                                                                                    <div
-                                                                                                        class="uc_portfolio_content">
-                                                                                                        <img src="images/drivebitton-3.png"
-                                                                                                            alt
-                                                                                                            class="uc_image-content-box-image"
-                                                                                                            style="object-fit:cover;">
-                                                                                                        <div class="uc_portfolio_overlay"
-                                                                                                            style="background-color:#1B202D;">
-                                                                                                            <a
-                                                                                                                href="https://www.drivebitton.com/">
-                                                                                                                <div
-                                                                                                                    class="uc_porfolio_detail">
-                                                                                                                    <i
-                                                                                                                        class></i>
-                                                                                                                </div>
-                                                                                                                <h2
-                                                                                                                    style="padding-top:10px;padding-bottom:10px;">
-                                                                                                                    DriveBitton
-                                                                                                                </h2>
-                                                                                                                <p><span class="uc_style_solid_color_overlay_icon_box_elementor_content_one"
-                                                                                                                        style="color:#FFFFFF;">WordPress
-                                                                                                                        Project
-                                                                                                                        used
-                                                                                                                        AJAX
-                                                                                                                        and
-                                                                                                                        PHP
-                                                                                                                        for
-                                                                                                                        a
-                                                                                                                        custom
-                                                                                                                        made
-                                                                                                                        recommendation
-                                                                                                                        plugin.
-                                                                                                                    </span>
-                                                                                                                </p>
-                                                                                                                <div
-                                                                                                                    class="uc_portfolio_link">
-                                                                                                                </div>
-                                                                                                            </a>
-                                                                                                        </div>
-                                                                                                    </div>
-                                                                                                </li>
-                                                                                            </ul>
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </section>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                            <section
-                                class="elementor-section elementor-top-section elementor-element elementor-element-4f466603 elementor-section-stretched elementor-section-boxed elementor-section-height-default elementor-section-height-default"
-                                data-id="4f466603" data-element_type="section"
-                                data-settings='{"stretch_section":"section-stretched"}'>
-                                <div class="elementor-container elementor-column-gap-default">
-                                    <div class="elementor-row">
-                                        <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2fd89433"
-                                            data-id="2fd89433" data-element_type="column">
-                                            <div class="elementor-column-wrap elementor-element-populated">
-                                                <div class="elementor-widget-wrap">
-                                                    <div class="elementor-element elementor-element-359dc4ef elementor-invisible elementor-widget elementor-widget-heading"
-                                                        data-id="359dc4ef" data-element_type="widget"
-                                                        data-settings='{"_animation":"fadeInUp"}'
-                                                        data-widget_type="heading.default">
-                                                        <div class="elementor-widget-container">
-                                                            <h2
-                                                                class="elementor-heading-title elementor-size-default">
-                                                                Happy Clients</h2>
-                                                        </div>
-                                                    </div>
-                                                    <div class="elementor-element elementor-element-49305334 elementor-invisible elementor-widget elementor-widget-divider"
-                                                        data-id="49305334" data-element_type="widget"
-                                                        data-settings='{"_animation":"fadeInUp","_animation_delay":300}'
-                                                        data-widget_type="divider.default">
-                                                        <div class="elementor-widget-container">
-                                                            <div class="elementor-divider"> <span
-                                                                    class="elementor-divider-separator"> </span>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="elementor-element elementor-element-75da5b8b elementor-invisible elementor-widget elementor-widget-text-editor"
-                                                        data-id="75da5b8b" data-element_type="widget"
-                                                        data-settings='{"_animation":"fadeInUp","_animation_delay":600}'
-                                                        data-widget_type="text-editor.default">
-                                                        <div class="elementor-widget-container">
-                                                            <div class="elementor-text-editor elementor-clearfix">
-                                                                Listen to what my clients have to say</div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="elementor-element elementor-element-33ad6b32 elementor-invisible elementor-widget elementor-widget-ucaddon_responsive_testemonial_carousel"
-                                                        data-id="33ad6b32" data-element_type="widget"
-                                                        data-settings='{"_animation":"fadeInUp"}'
-                                                        data-widget_type="ucaddon_responsive_testemonial_carousel.default">
-                                                        <div class="elementor-widget-container">
-                                                            <style>
-                                                                .slick-slider {
-                                                                    overflow: hidden
-                                                                }
+<!-- Articles -->
+<section id="articles" class="section">
+  <div class="container">
+    <h2 class="section-title">Articles</h2>
+    <p class="section-subtitle">Thoughts and tutorials I've written</p>
+    <div class="projects-grid">
+      <div class="project-card reveal">
+        <img src="images/1_5wU53FnFGwpJ3HefKNUouw.webp" alt="Express to Impress: Documenting APIs with Swagger" class="project-thumb" loading="lazy">
+        <div class="project-info">
+          <h3>Express to Impress</h3>
+          <p>A practical guide to integrating Swagger with Express.js to create clean, interactive API documentation.</p>
+          <div class="project-tags"><span>Express.js</span><span>Swagger</span><span>API Docs</span></div>
+          <a href="https://medium.com/@sagiweizmann/express-to-impress-documenting-apis-with-swagger-3744e95c1870" target="_blank" rel="noopener" class="project-link">Read on Medium &rarr;</a>
+        </div>
+      </div>
+      <div class="project-card reveal">
+        <img src="images/1_7QuxlisZOwcNoQyIwFNrjA.webp" alt="Database Cascade: Unveiling the Ripple Effect of Cascading Options" class="project-thumb" loading="lazy">
+        <div class="project-info">
+          <h3>Database Cascade</h3>
+          <p>An in-depth look at cascading options — how ON DELETE and ON UPDATE rules work and the ripple effects on your data.</p>
+          <div class="project-tags"><span>Database</span><span>SQL</span><span>Architecture</span></div>
+          <a href="https://medium.com/@sagiweizmann/database-cascade-unveiling-the-ripple-effect-of-cascading-options-a34f4e0ff81e" target="_blank" rel="noopener" class="project-link">Read on Medium &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-                                                                .uc_quote_info {
-                                                                    background-color: #fff
-                                                                }
+<!-- Testimonials -->
+<section id="testimonials" class="section">
+  <div class="container">
+    <h2 class="section-title">Happy Clients</h2>
+    <p class="section-subtitle">What my clients have to say</p>
+    <div class="testimonials-grid">
+      <div class="testimonial-card reveal">
+        <blockquote>With a custom recommendation plugin, he created a high-demand website. He is a professional, a perfectionist, and a supporter when you need help. His prices are comfortable and reasonable.</blockquote>
+        <div class="testimonial-author">
+          <img src="images/10603740_881966261830944_6629111957350917899_n.jpg" alt="David Bitton" loading="lazy">
+          <div>
+            <div class="name">David Bitton</div>
+            <div class="role">DriveBitton</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card reveal">
+        <blockquote>He was suggested to me by a friend. He constructed the Keshet website professionally, and there is no question about the quality of his work.</blockquote>
+        <div class="testimonial-author">
+          <img src="images/Screenshot-2020-11-28-170724.png" alt="Hagai Dvir" loading="lazy">
+          <div>
+            <div class="name">Hagai Dvir</div>
+            <div class="role">Keshet</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-                                                                .uc_quote_slider .slick-dots li.slick-active button {
-                                                                    background: #FF214F
-                                                                }
+<!-- Contact -->
+<section id="contact" class="section">
+  <div class="container">
+    <div class="contact-content">
+      <h2 class="section-title">Let's Work Together</h2>
+      <p>Have a project in mind? I'd love to hear about it. Reach out through any of the channels below.</p>
+      <div class="contact-links">
+        <a href="mailto:sagiweizmann@gmail.com">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>
+          Email
+        </a>
+        <a href="https://www.linkedin.com/in/sagiweizmann/" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05a3.74 3.74 0 013.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 11-.01-4.13 2.06 2.06 0 01.01 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77A1.75 1.75 0 000 1.73v20.54A1.75 1.75 0 001.77 24h20.45A1.76 1.76 0 0024 22.27V1.73A1.76 1.76 0 0022.22 0z"/></svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/sagiweizmann" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 .3a12 12 0 00-3.8 23.38c.6.12.82-.26.82-.58v-2.16c-3.34.73-4.04-1.61-4.04-1.61a3.18 3.18 0 00-1.33-1.76c-1.09-.74.08-.73.08-.73a2.52 2.52 0 011.84 1.24 2.56 2.56 0 003.5 1 2.56 2.56 0 01.76-1.61c-2.67-.3-5.47-1.34-5.47-5.95a4.66 4.66 0 011.24-3.23 4.33 4.33 0 01.12-3.18s1-.33 3.3 1.23a11.38 11.38 0 016 0c2.28-1.56 3.29-1.23 3.29-1.23a4.33 4.33 0 01.12 3.18 4.66 4.66 0 011.24 3.23c0 4.63-2.81 5.65-5.49 5.95a2.86 2.86 0 01.82 2.22v3.29c0 .32.21.7.82.58A12 12 0 0012 .3z"/></svg>
+          GitHub
+        </a>
+        <a href="tel:052-2621384">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg>
+          Phone
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 
-                                                                .uc_quote_slider .slick-dots>li>button {
-                                                                    -webkit-appearance: button;
-                                                                    cursor: pointer;
-                                                                    outline: 0;
-                                                                    text-decoration: none;
-                                                                    transition: .4s;
-                                                                    font-size: 0px;
-                                                                    width: 9px;
-                                                                    height: 9px;
-                                                                    padding: 0;
-                                                                    background: transparent;
-                                                                    border: 1px solid #FF214F;
-                                                                    border-radius: 50%
-                                                                }
+</main>
 
-                                                                .uc_quote_slider .uc_quote_info .uc_author_info .uc_company {
-                                                                    color: #FF214F
-                                                                }
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2026 Sagi Weizmann. All rights reserved.</p>
+  </div>
+</footer>
 
-                                                                .uc_quote_slider .slick-dots li {
-                                                                    float: left
-                                                                }
-                                                            </style>
-                                                            <div class="uc_quote_slider" style="direction:ltr">
-                                                                <div class="uc_quote_item"
-                                                                    style="border-radius:0px;">
-                                                                    <div class="uc_quote_info"
-                                                                        style="border-radius:0px;direction:ltr;">
-                                                                        <p><span class="uc_style_responsive_testemonial_carousel_elementor_uc_items_attribute_testemonial_text"
-                                                                                style="color:#888888;">With a custom
-                                                                                recommendation plugin, he created a
-                                                                                high-demand website. He is a
-                                                                                professional, a perfectionist, and a
-                                                                                supporter when you need help. His
-                                                                                prices are comfortable and
-                                                                                reasonable.</span></p>
-                                                                        <div class="uc_author"> <img loading="lazy"
-                                                                                class="uc_author_avatar lazy"
-                                                                                src="images/10603740_881966261830944_6629111957350917899_n.jpg"
-                                                                                height="48" width="48" alt>
-                                                                            <div class="uc_author_info">
-                                                                                <div class="uc_name"><span
-                                                                                        class="uc_style_responsive_testemonial_carousel_elementor_uc_items_attribute_title"
-                                                                                        style="color:#000000;">David
-                                                                                        Bitton</span></div>
-                                                                                <div class="uc_company"><a
-                                                                                        href="https://drivebitton.com">DriveBitton</a>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="uc_quote_item"
-                                                                    style="border-radius:0px;">
-                                                                    <div class="uc_quote_info"
-                                                                        style="border-radius:0px;direction:ltr;">
-                                                                        <p><span class="uc_style_responsive_testemonial_carousel_elementor_uc_items_attribute_testemonial_text"
-                                                                                style="color:#888888;">He was
-                                                                                suggested to me by a friend. He
-                                                                                constructed the Keshet website
-                                                                                professionally, and there is no
-                                                                                question about the quality of his
-                                                                                work.</span></p>
-                                                                        <div class="uc_author"> <img loading="lazy"
-                                                                                class="uc_author_avatar lazy"
-                                                                                src="images/Screenshot-2020-11-28-170724.png"
-                                                                                height="48" width="48" alt>
-                                                                            <div class="uc_author_info">
-                                                                                <div class="uc_name"><span
-                                                                                        class="uc_style_responsive_testemonial_carousel_elementor_uc_items_attribute_title"
-                                                                                        style="color:#000000;">Hagai
-                                                                                        Dvir</span></div>
-                                                                                <div class="uc_company"><a
-                                                                                        href="https://%D7%A7%D7%A9%D7%AA.com">Keshet</a>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </article>
-    </main>
-    <center>Theme Made By Sagi Weizmann.</center>
-</div>
-<script src="js/minify-a77d7.js"></script>
-<script
-    id="elementor-pro-frontend-js-before">var ElementorProFrontendConfig = { "ajaxurl": "https:\/\/sagiweizmann.com\/wp-admin\/admin-ajax.php", "nonce": "1d126ed296", "i18n": { "toc_no_headings_found": "No headings were found on this page." }, "shareButtonsNetworks": { "facebook": { "title": "Facebook", "has_counter": true }, "twitter": { "title": "Twitter" }, "google": { "title": "Google+", "has_counter": true }, "linkedin": { "title": "LinkedIn", "has_counter": true }, "pinterest": { "title": "Pinterest", "has_counter": true }, "reddit": { "title": "Reddit", "has_counter": true }, "vk": { "title": "VK", "has_counter": true }, "odnoklassniki": { "title": "OK", "has_counter": true }, "tumblr": { "title": "Tumblr" }, "delicious": { "title": "Delicious" }, "digg": { "title": "Digg" }, "skype": { "title": "Skype" }, "stumbleupon": { "title": "StumbleUpon", "has_counter": true }, "mix": { "title": "Mix" }, "telegram": { "title": "Telegram" }, "pocket": { "title": "Pocket", "has_counter": true }, "xing": { "title": "XING", "has_counter": true }, "whatsapp": { "title": "WhatsApp" }, "email": { "title": "Email" }, "print": { "title": "Print" }, "weixin": { "title": "WeChat" }, "weibo": { "title": "Weibo" } }, "facebook_sdk": { "lang": "en_US", "app_id": "" }, "lottie": { "defaultAnimationUrl": "https:\/\/sagiweizmann.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json" } };</script>
-<script src="js/minify-f1169.js"></script>
-<script
-    id="elementor-frontend-js-before">var elementorFrontendConfig = { "environmentMode": { "edit": false, "wpPreview": false }, "i18n": { "shareOnFacebook": "Share on Facebook", "shareOnTwitter": "Share on Twitter", "pinIt": "Pin it", "download": "Download", "downloadImage": "Download image", "fullscreen": "Fullscreen", "zoom": "Zoom", "share": "Share", "playVideo": "Play Video", "previous": "Previous", "next": "Next", "close": "Close" }, "is_rtl": false, "breakpoints": { "xs": 0, "sm": 480, "md": 768, "lg": 1025, "xl": 1440, "xxl": 1600 }, "version": "3.0.9", "is_static": false, "legacyMode": { "elementWrappers": true }, "urls": { "assets": "https:\/\/sagiweizmann.com\/wp-content\/plugins\/elementor\/assets\/" }, "settings": { "page": [], "editorPreferences": [] }, "kit": { "global_image_lightbox": "yes", "lightbox_enable_counter": "yes", "lightbox_enable_fullscreen": "yes", "lightbox_enable_zoom": "yes", "lightbox_enable_share": "yes", "lightbox_title_src": "title", "lightbox_description_src": "description" }, "post": { "id": 239, "title": "Sagi%20Weizmann", "excerpt": "", "featuredImage": false } };</script>
-<script src="js/minify-9f110.js"></script>
-<script>jQuery(document).ready(function () { Typed.new('#uc_typewriter_text_effect_elementor12363 .uc-typewriter-element', { strings: ["Design", "Develop"], typeSpeed: 300, typeSpeed: 50, backSpeed: 0, startDelay: 1500, backDelay: 1500, loop: true, loopCount: false, showCursor: false, attr: null }); }); jQuery(document).ready(function () { Typed.new('#uc_typewriter_text_effect_elementor26145 .uc-typewriter-element', { strings: [""], typeSpeed: 300, typeSpeed: 50, backSpeed: 0, startDelay: 1500, backDelay: 1500, loop: true, loopCount: false, showCursor: false, attr: null }); }); jQuery(document).ready(function () { jQuery('.uc_quote_slider').slick({ infinite: true, slidesToShow: 3, slidesToScroll: 1, arrows: false, dots: true, speed: 300, responsive: [{ breakpoint: 1024, settings: { slidesToShow: 3, slidesToScroll: 1 } }, { breakpoint: 900, settings: { slidesToShow: 2, slidesToScroll: 1 } }, { breakpoint: 767, settings: { slidesToShow: 1, slidesToScroll: 1 } }] }); });</script>
-<script>window.w3tc_lazyload = 1, window.lazyLoadOptions = { elements_selector: ".lazy", callback_loaded: function (t) { var e; try { e = new CustomEvent("w3tc_lazyload_loaded", { detail: { e: t } }) } catch (a) { (e = document.createEvent("CustomEvent")).initCustomEvent("w3tc_lazyload_loaded", !1, !1, { e: t }) } window.dispatchEvent(e) } }</script>
-<script async src="js/minify-1615d.js"></script>
+<script src="main.js"></script>
 </body>
-
 </html>
