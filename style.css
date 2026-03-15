@@ -45,7 +45,7 @@ ul { list-style: none; }
 
 /* ===== Utilities ===== */
 .container { max-width: 1140px; margin: 0 auto; padding: 0 1.5rem; }
-.section { padding: 5rem 0; }
+.section { padding: 4rem 0; }
 .section-title {
   font-size: 2rem;
   font-weight: 700;
@@ -115,7 +115,7 @@ ul { list-style: none; }
 
 /* ===== Hero ===== */
 .hero {
-  min-height: 100vh; display: flex; align-items: center; justify-content: center;
+  min-height: 45vh; display: flex; align-items: center; justify-content: center;
   background: linear-gradient(135deg, #0F172A 0%, #1E293B 50%, #0F172A 100%);
   position: relative; overflow: hidden; text-align: center; padding: 6rem 1.5rem 4rem;
 }
@@ -147,7 +147,7 @@ ul { list-style: none; }
 .about-photo { position: relative; }
 .about-photo img {
   border-radius: var(--radius); box-shadow: var(--shadow-lg);
-  width: 100%; object-fit: cover; aspect-ratio: 3/4;
+  width: 100%; max-height: 350px; object-fit: cover;
 }
 .about-photo::after {
   content: ''; position: absolute; inset: 1rem; border: 2px solid var(--primary);
